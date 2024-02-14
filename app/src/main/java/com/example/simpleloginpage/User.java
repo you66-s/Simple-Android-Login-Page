@@ -1,5 +1,7 @@
 package com.example.simpleloginpage;
 
+import androidx.annotation.NonNull;
+
 import java.util.ArrayList;
 
 public class User {
@@ -58,5 +60,11 @@ public class User {
 
     public void addUser(User user){
         this.User_List.add(user);
+    }
+
+    @NonNull
+    @Override
+    public String toString() {
+        return super.toString()+"This is a user";
     }
 }
